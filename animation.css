@@ -1,0 +1,33 @@
+.bg-anime {
+  background-color: #0c3885;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin: auto;
+  animation-name: background;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+/* @keyframes background {
+  from {
+    background-color: #0c795b;
+  }
+  to {
+    background-color: #37b432;
+  }
+} */
+@keyframes background {
+  0% {
+    background-color: #ff9cd7;
+  }
+  25% {
+    background-color: #ff70b8;
+  }
+  50% {
+    background-color: #bf4a98;
+  }
+  100% {
+    background-color: #743978;
+  }
+}
