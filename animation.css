@@ -31,3 +31,55 @@
     background-color: #743978;
   }
 }
+
+.container {
+  background-color: #fffbc7;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin: auto;
+}
+
+.inner {
+  background-color: #c3ff79;
+  width: 50%;
+  height: 50%;
+  /* animation: travel 2s infinite alternate 2s; */
+  animation: travel 2s infinite alternate-reverse 2s;
+}
+@keyframes travel {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translateY(100%);
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(100%, 100%);
+    border-radius: 20%;
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shake-anime {
+  text-align: center;
+  font-size: 10rem;
+  color: aqua;
+}
+.shake-anime:hover {
+  animation: shake 0.4s infinite ease-in-out;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
